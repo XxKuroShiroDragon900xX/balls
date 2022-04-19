@@ -20,10 +20,33 @@ h1 {
   top: -4px;
   right: 5px;
 
-  color: transparent;
-  text-shadow: 0 0 4px white;
+  color: rgb(252, 15, 192);
+  text-shadow:
+  5px 5px rgba(252, 15, 192, 0.9),
+  10px 10px rgba(252, 15, 192, 0.8),
+  15px 15px rgba(252, 15, 192, 0.7),
+  20px 20px rgba(252, 15, 192, 0.6),
+  25px 25px rgba(252, 15, 192, 0.5),
+  30px 30px rgba(252, 15, 192, 0.4),
+  35px 35px rgba(252, 15, 192, 0.3),
+  40px 40px rgba(252, 15, 192, 0.2),
+  45px 45px rgba(252, 15, 192, 0.1);
 }
-
+h1:hover{
+  color: rgb(15, 252, 209);
+  text-shadow:
+  5px 5px rgba(15, 252, 209, 0.9),
+  10px 10px rgba(15, 252, 209, 0.8),
+  15px 15px rgba(15, 252, 209, 0.7),
+  20px 20px rgba(15, 252, 209, 0.6),
+  25px 25px rgba(15, 252, 209, 0.5),
+  30px 30px rgba(15, 252, 209, 0.4),
+  35px 35px rgba(15, 252, 209, 0.3),
+  40px 40px rgba(15, 252, 209, 0.2),
+  45px 45px rgba(15, 252, 209, 0.1);
+  transform: translateY(50px) scale(1.005) translateZ(0);
+  transition: 5s;
+}
 canvas{
   background-color: black;
 }

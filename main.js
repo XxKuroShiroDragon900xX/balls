@@ -27,10 +27,16 @@ Ball.prototype.draw = function() {
   ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
   ctx.fill();
 }
+let testBall = new Ball(50, 100, 4, 4, '#ddbbff', 10);
 testBall.x
 testBall.size
 testBall.color
 testBall.draw()
+
+
+
+
+
 
 Ball.prototype.update = function() {
   if ((this.x + this.size)>= width){
@@ -53,8 +59,8 @@ if ((this.y - this.size) <= 0) {
 this.x += this.velX;
 this.y += this.velY;
 }
-
 let balls = [];
+
 while (balls.length < 25) {
   let size = random(10,20);
   let ball = new Ball(
@@ -78,6 +84,8 @@ function loop() {
 
   requestAnimationFrame(loop);
 }
+loop();
+
 Ball.prototype.collisionDetect = function() {
   for (let j=0; j<balls.length; j++){
     if(!(this === balls[j])) {
@@ -92,4 +100,4 @@ Ball.prototype.collisionDetect = function() {
   }
 }
 balls[i].update();
-balls[i].collisionDetect
+balls[i].collisionDetect();
